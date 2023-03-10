@@ -1,0 +1,14 @@
+{
+  "name": "social-network-api",
+  "version": "1.0",
+  "description": "Challenge-18",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+"dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
+  }
+}
