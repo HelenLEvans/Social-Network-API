@@ -31,7 +31,7 @@ const thoughtsController = {
         res.status(500).json(err);
       });
   },
-  getThoughtsById({ params }, res) {
+  getThoughtById({ params }, res) {
     Thoughts.findOne({ _id: params.id })
       //   .populate({ path: "reactions", select: "-__v" })
       //   .select("-__v")
@@ -49,7 +49,7 @@ const thoughtsController = {
         res.sendStatus(400);
       });
   },
-};
+}
 
 updateThoughts({params, body}, res) {
   Thoughts.findOneAndUpdate({_id: params.id}, body, {new: true, runValidators: true})
@@ -63,7 +63,7 @@ updateThoughts({params, body}, res) {
           res.json(dbThoughtsData);
   })
   .catch(err => res.json(err));
-};
+}
 
 deleteThoughts({params}, res) {
   Thoughts.findOneAndDelete({_id: params.id})
