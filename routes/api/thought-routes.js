@@ -11,8 +11,8 @@ const {
 } = require("../../controllers/thoughtController");
 
 // Set up GET all and POST at /api/thoughts
-router.route("/").get(getAllThoughts).post(createThought);
-
+router.route("/").get(getAllThoughts);
+router.route("/:userId").post(createThought);
 // Set up GET one, PUT, and DELETE at /api/thoughts/:id
 router
   .route("/:id")
