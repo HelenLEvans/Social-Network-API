@@ -1,6 +1,6 @@
 const { Thought, Users } = require("../models");
 
-const thoughtsController = {
+const thoughtController = {
   createThought({ params, body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
@@ -122,4 +122,4 @@ const thoughtsController = {
   },
 };
 
-module.exports = thoughtsController;
+module.exports = thoughtController;
