@@ -13,3 +13,8 @@ Installation and Setup
 
 Usage
 Once everything is installed run node server.js to start.
+
+Link to walkthrough video: https://drive.google.com/file/d/11e0FsPkB52pvvsz-27-F-stQDVrbRIJl/view
+
+Credits
+credit to Jude Clark and Tudor Tocan (UofO tutors) for help with this project
